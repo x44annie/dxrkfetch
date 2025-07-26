@@ -27,7 +27,7 @@ UwUFetch is a lightweight, fun, and kawaii terminal tool that fetches and displa
 
 ---
 
-### 🛠️ Installation
+## 🛠️ Installation
 
 > 🚧 *In the middle of development~* 🛠️🧸<br>
 > Stay tuned for easy installers coming soon! ✨😊
