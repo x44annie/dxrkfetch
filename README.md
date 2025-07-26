@@ -20,11 +20,16 @@ UwUFetch is a lightweight, fun, and kawaii terminal tool that fetches and displa
 * 🥰 Adds a dash of cuteness to your daily terminal routine
 
 ---
+## ✨ Screenshots
 
+
+![UwUFetch macOS](/screenshot/macos.png)
+
+---
 
 ### 🛠️ Installation
 
-> 🚧 *In the middle of development~* 🛠️🧸"<br>
+> 🚧 *In the middle of development~* 🛠️🧸<br>
 > Stay tuned for easy installers coming soon! ✨😊
 
 ---
@@ -56,13 +61,6 @@ Feel free to open issues or submit pull requests — all contributions and cute 
 ## ❤️ License
 
 This project is licensed under the MIT License. Spread the cuteness!
-
----
-
-## ✨ Screenshots
-
-
-![UwUFetch macOS](/screenshot/macos.png)
 
 ---
 
