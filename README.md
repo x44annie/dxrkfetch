@@ -1,57 +1,56 @@
-# UwUFetch 🐾✨
+# 🕶 dxrkfetch
 
-> *Your adorable system info buddy for Linux & macOS — with all the uwu vibes!*
-
----
-
-## 💖 What is UwUFetch?
-
-UwUFetch is a lightweight, fun, and kawaii terminal tool that fetches and displays your system information — but with a soft, cute, and cozy flair! It shows your OS, kernel, uptime, shell, and more, wrapped in adorable ASCII art and uwu-style charm.
+> *System info. Terminal black. Aesthetic lethal.*
+> *No masc nonsense. Just stripped binaries and bleeding output.*
 
 ---
 
-## 🌈 Features
+## 🖤 what is dxrkfetch?
 
-* 🐧 Works smoothly on **Linux** and **macOS**
-* 🎨 Custom ASCII logos tailored to your distro
-* ⏳ Shows uptime, kernel version, shell, and user info
-* ☕ Bundled with Java — no need to install JDK/JRE
-* ⚡ Fast and lightweight, perfect for cozy terminals
-* 🥰 Adds a dash of cuteness to your daily terminal routine
-
----
-## ✨ Screenshots
-
-
-![UwUFetch macOS](/screenshot/macos.png)
+`dxrkfetch` is a minimal and moody system info tool for **Linux** and **macOS** — a fork of cute nonsense turned into a sharper, darker utility.
+It displays system stats (OS, kernel, uptime, shell, etc.) in a clean, ASCII-powered format — built for **dark terminals**, **noir moods**, and **dead-eyed productivity**.
 
 ---
 
-## 🛠️ Installation
+## ⚙️ features
 
-> 🚧 *In the middle of development~* 🛠️🧸<br>
-> Stay tuned for easy installers coming soon! ✨😊
+* 🐧 Built for **Linux** and **macOS**
+* 🩻 ASCII logos — glitchcore, distro-accurate
+* ⏳ Uptime, kernel, shell, packages, and user info
+* ☕ Bundled JRE — no runtime dependencies
+* 🚫 No color vomit. No bloat. No bullshit.
+* 🖤 Fast, quiet, and terminal-native
 
 ---
 
-## 🚀 Usage
+## 📸 screenshots
 
-Simply run:
+![dxrkfetch macOS](/screenshot/macos.png)
+
+---
+
+## 🧪 installation
+
+> ⚠️ *currently under dark construction...*
+> no install script yet. just shadow builds. patience is a virtue. 🕳️
+
+---
+
+## 🚀 usage
 
 ```bash
-UwUFetch
+dxrkfetch
 ```
 
-or if running from the jar directly:
+Or run directly:
 
 ```bash
-java -jar UwUFetch.jar
+java -jar dxrkfetch.jar
 ```
-
-Your terminal will be filled with cute system info and uwu energy! ✨
 
 ---
 
-## 🐱 Support & Contributions
+## ☠️ contribute
 
-Feel free to open issues or submit pull requests — all contributions and cute ideas are welcome!
+This project is open to the weirdos, the quiet rebels, and anyone who thinks `neofetch` should wear black and talk less.
+
