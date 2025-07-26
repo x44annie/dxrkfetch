@@ -55,15 +55,3 @@ Your terminal will be filled with cute system info and uwu energy! ✨
 ## 🐱 Support & Contributions
 
 Feel free to open issues or submit pull requests — all contributions and cute ideas are welcome!
-
----
-
-## ❤️ License
-
-This project is licensed under the MIT License. Spread the cuteness!
-
----
-
-## 💬 Stay in touch
-
-Follow for updates, tips, and more kawaii tools!
