@@ -1,6 +1,3 @@
-
----
-
 # UwUFetch 🐾✨
 
 > *Your adorable system info buddy for Linux & macOS — with all the uwu vibes!*
