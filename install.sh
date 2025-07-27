@@ -20,6 +20,8 @@ if ! command -v javac >/dev/null 2>&1; then
       # macOS
       if command -v brew >/dev/null 2>&1; then
         brew install openjdk@24
+        sudo ln -sfn /opt/homebrew/opt/openjdk@24/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-24.jdk
+
       else
         echo "[x] Homebrew not found. Please install JDK manually from https://adoptium.net/"
         exit 1
