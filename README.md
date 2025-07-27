@@ -27,9 +27,8 @@ It displays system stats (OS, kernel, uptime, shell, etc.) in a clean, ASCII-pow
 
 ## installation 🕳️
 
-**Minimal. Terminal. No mercy.**
+*Minimal. Terminal. No mercy.*
 
-<br>
 
 ### 🧷 One-Liner Install (with curl)
 
@@ -47,7 +46,7 @@ chmod +x build.sh install.sh
 dxrkfetch
 ```
 
----
+<br>
 
 ### ⚙️ Dependencies
 
@@ -57,17 +56,9 @@ dxrkfetch
 
 ---
 
-## usage 👁️
+## contribute ☠️
+This project is open to the weirdos, the quiet rebels, and anyone who thinks `neofetch` should wear black and talk less.
 
-```bash
-dxrkfetch
-```
-
-Or run directly:
-
-```bash
-java -jar dxrkfetch.jar
-```
 ---
 
 <div align="center">
