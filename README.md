@@ -25,10 +25,35 @@ It displays system stats (OS, kernel, uptime, shell, etc.) in a clean, ASCII-pow
 
 ---
 
-## installation 🔧
+## installation 🕳️
 
-> ⚠️ *currently under dark construction...*
-> no install script yet. just shadow builds. patience is a virtue. 🕳️
+**Minimal. Terminal. No mercy.**
+
+<br>
+
+### 🧷 One-Liner Install (with curl)
+
+```bash
+curl -sSL https://raw.githubusercontent.com/404femme/dxrkfetch/main/install.sh | sh
+```
+<br>
+
+### 🕷️ Manual Setup (for control freaks)
+
+```bash
+chmod +x build.sh install.sh
+./build.sh
+./install.sh
+dxrkfetch
+```
+
+---
+
+### ⚙️ Dependencies
+
+* 🧱 JDK 8+
+* 🧨 Unix-like OS (Linux, macOS)
+* 🛠 `bash`, `javac`, `jar`, `sudo`
 
 ---
 
