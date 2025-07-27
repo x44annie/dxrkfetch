@@ -38,8 +38,7 @@ curl -fsSL https://raw.githubusercontent.com/404femme/dxrkfetch/main/install.sh 
 #### ・Manual Setup (for control freaks)
 
 ```bash
-chmod +x build.sh install.sh
-./build.sh
+chmod +x install.sh
 ./install.sh
 dxrkfetch
 ```
