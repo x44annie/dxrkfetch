@@ -19,7 +19,7 @@ if ! command -v javac >/dev/null 2>&1; then
     Darwin)
       # macOS
       if command -v brew >/dev/null 2>&1; then
-        brew install openjdk
+        brew install openjdk@24
       else
         echo "[x] Homebrew not found. Please install JDK manually from https://adoptium.net/"
         exit 1
@@ -30,20 +30,20 @@ if ! command -v javac >/dev/null 2>&1; then
       # Detect Linux package manager
       if command -v nix-env >/dev/null 2>&1; then
         echo "[i] Detected Nix package manager"
-        nix-env -iA nixpkgs.openjdk
+        nix-env -iA nixpkgs.jdk24
 
-      elif command -v apt-get >/dev/null 2>&1; then
-        sudo apt-get update
-        sudo apt-get install -y default-jdk
+      elif command -v apt >/dev/null 2>&1; then
+        sudo apt update
+        sudo apt install -y openjdk-24-jdk
 
       elif command -v dnf >/dev/null 2>&1; then
-        sudo dnf install -y java-latest-openjdk
+        sudo dnf install jdk-24-headless
 
       elif command -v yum >/dev/null 2>&1; then
         sudo yum install -y java-latest-openjdk
 
       elif command -v pacman >/dev/null 2>&1; then
-        sudo pacman -Sy --noconfirm jdk-openjdk
+        sudo pacman -Sy --noconfirm jdk-openjdk 24.0.2.u12-1
 
       elif command -v slackpkg >/dev/null 2>&1; then
         sudo slackpkg update
