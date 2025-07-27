@@ -1,5 +1,12 @@
 #!/bin/bash
 
+set -e
+
+JAR_URL="https://github.com/404femme/dxrkfetch/releases/latest/download/dxrkfetch.jar"
+INSTALL_DIR="/usr/local/lib/dxrkfetch"
+BIN_DIR="/usr/local/bin"
+LAUNCHER="$BIN_DIR/dxrkfetch"
+
 # Check if javac is available
 if ! command -v javac >/dev/null 2>&1; then
   echo "[!] JDK not found. Installing..."
@@ -65,50 +72,16 @@ else
   echo "[✓] JDK found: $(javac -version)"
 fi
 
+echo "[+] Downloading dxrkfetch.jar..."
+sudo mkdir -p "$INSTALL_DIR"
+sudo curl -sSL "$JAR_URL" -o "$INSTALL_DIR/dxrkfetch.jar"
+
+echo "[+] Creating launcher at $LAUNCHER_PATH..."
+sudo tee "$LAUNCHER_PATH" > /dev/null <<'EOF'
 #!/usr/bin/env bash
-
-set -e
-
-SRC_DIR="src"
-OUT_DIR="build"
-JAR_NAME="dxrkfetch.jar"
-MAIN_CLASS="Main"
-
-mkdir -p "$OUT_DIR"
-
-echo "[+] Compiling Java..."
-javac -d "$OUT_DIR" "$SRC_DIR/$MAIN_CLASS.java"
-
-echo "Main-Class: $MAIN_CLASS" > manifest.txt
-
-echo "[+] Packaging JAR..."
-jar cfm "$JAR_NAME" manifest.txt -C "$OUT_DIR" .
-
-rm manifest.txt
-
-echo "[✓] Built $JAR_NAME"
-
-#!/usr/bin/env bash
-set -e
-
-PREFIX="/usr/local"
-BINDIR="$PREFIX/bin"
-LIBDIR="$PREFIX/lib/dxrkfetch"
-JAR_NAME="dxrkfetch.jar"
-LAUNCHER="$BINDIR/dxrkfetch"
-
-echo "[+] Installing dxrkfetch..."
-
-sudo mkdir -p "$LIBDIR"
-sudo mkdir -p "$BINDIR"
-sudo cp "$JAR_NAME" "$LIBDIR"
-
-sudo tee "$LAUNCHER" > /dev/null <<EOF
-#!/usr/bin/env bash
-exec java -jar "$LIBDIR/$JAR_NAME" "\$@"
+exec java -jar "/usr/local/lib/dxrkfetch/dxrkfetch.jar" "$@"
 EOF
+sudo chmod +x "$LAUNCHER_PATH"
 
-sudo chmod +x "$LAUNCHER"
-
-echo "[✓] Installed: $LAUNCHER"
-echo "Run with: dxrkfetch"
+echo "[✓] Installation complete!"
+echo "    You can now run: dxrkfetch"
