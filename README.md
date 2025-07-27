@@ -29,15 +29,13 @@ It displays system stats (OS, kernel, uptime, shell, etc.) in a clean, ASCII-pow
 
 *Minimal. Terminal. No mercy.*
 
-
-### 🧷 One-Liner Install (with curl)
+#### ・One-Liner Install (with curl)
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/404femme/dxrkfetch/main/install.sh | sh
 ```
-<br>
 
-### 🕷️ Manual Setup (for control freaks)
+#### ・Manual Setup (for control freaks)
 
 ```bash
 chmod +x build.sh install.sh
@@ -46,9 +44,7 @@ chmod +x build.sh install.sh
 dxrkfetch
 ```
 
-<br>
-
-### ⚙️ Dependencies
+#### ・Dependencies
 
 * 🧱 JDK 8+
 * 🧨 Unix-like OS (Linux, macOS)
