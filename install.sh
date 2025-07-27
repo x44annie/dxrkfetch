@@ -43,8 +43,7 @@ if ! command -v javac >/dev/null 2>&1; then
         sudo yum install -y java-latest-openjdk
 
       elif command -v pacman >/dev/null 2>&1; then
-        sudo pacman -Sy --noconfirm jdk-openjdk 24.0.2.u12-1
-
+        sudo pacman -Sy --noconfirm jdk-openjdk-24.0.2.u121
       elif command -v slackpkg >/dev/null 2>&1; then
         sudo slackpkg update
         sudo slackpkg install openjdk

@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.regex.*;
 
 public class SystemNameProvider {
 
@@ -51,15 +52,18 @@ public class SystemNameProvider {
 
     private static String getVersionLinux() {
         try {
-            ProcessBuilder builder = new ProcessBuilder("cat", "/etc/os-release");
+            ProcessBuilder builder = new ProcessBuilder("uname", "-a");
             Process process = builder.start();
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
 
-            while ((line = reader.readLine()) != null) {
-                if (line.startsWith("VERSION=")) {
-                    return line.split("=", 2)[1].replace("\"", "").trim();
+            if ((line = reader.readLine()) != null) {
+                Pattern pattern = Pattern.compile("\\b\\d+(\\.\\d+)+([-\\w]*)?\\b");
+                Matcher matcher = pattern.matcher(line);
+
+                if (matcher.find()) {
+                    return matcher.group().trim();
                 }
             }
         } catch (Exception e) {

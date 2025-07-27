@@ -45,7 +45,7 @@ dxrkfetch
 
 #### ・Dependencies
 
-* 🧱 JDK 8+
+* 🧱 JDK 24+
 * 🧨 Unix-like OS (Linux, macOS)
 * 🛠 `bash`, `javac`, `jar`, `sudo`
 
