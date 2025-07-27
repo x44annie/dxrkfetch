@@ -5,8 +5,8 @@ set -e
 OS="$(uname)"
 
 if [[ "$OS" == "Darwin" ]]; then
-  INSTALL_DIR="/usr/local/lib/dxrkfetch"
-  BIN_DIR="/usr/local/bin"
+  INSTALL_DIR="/usr/lib/dxrkfetch"
+  BIN_DIR="/usr/bin"
 elif [[ "$OS" == "Linux" ]]; then
   INSTALL_DIR="/usr/local/lib/dxrkfetch"
   BIN_DIR="/usr/local/bin"
