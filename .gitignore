@@ -15,7 +15,7 @@ out/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-UwUFetch.iml
+dxrkfetch.iml
 
 ### NetBeans ###
 /nbproject/private/
