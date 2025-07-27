@@ -32,9 +32,9 @@ if ! command -v javac >/dev/null 2>&1; then
         echo "[i] Detected Nix package manager"
         nix-env -iA nixpkgs.openjdk
 
-      elif command -v apt >/dev/null 2>&1; then
-        sudo apt update
-        sudo apt install -y default-jdk
+      elif command -v apt-get >/dev/null 2>&1; then
+        sudo apt-get update
+        sudo apt-get install -y default-jdk
 
       elif command -v dnf >/dev/null 2>&1; then
         sudo dnf install -y java-latest-openjdk
