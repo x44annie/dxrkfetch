@@ -47,10 +47,10 @@ if ! command -v javac >/dev/null 2>&1; then
         sudo apt install -y default-jdk
 
       elif command -v dnf >/dev/null 2>&1; then
-        sudo dnf install -y java-11-openjdk-devel
+        sudo dnf install -y java-latest-openjdk
 
       elif command -v yum >/dev/null 2>&1; then
-        sudo yum install -y java-11-openjdk-devel
+        sudo yum install -y java-latest-openjdk
 
       elif command -v pacman >/dev/null 2>&1; then
         sudo pacman -Sy --noconfirm jdk-openjdk
