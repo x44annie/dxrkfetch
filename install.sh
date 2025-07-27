@@ -2,20 +2,13 @@
 
 set -e
 
-OS="$(uname)"
-
-if [[ "$OS" == "Darwin" ]]; then
-  INSTALL_DIR="/usr/lib/dxrkfetch"
-  BIN_DIR="/usr/bin"
-elif [[ "$OS" == "Linux" ]]; then
-  INSTALL_DIR="/usr/local/lib/dxrkfetch"
-  BIN_DIR="/usr/local/bin"
-else
-  echo "[x] Unsupported OS. Please install manually."
-  exit 1
-fi
+sudo mkdir -p /usr/local/bin /usr/local/lib
+# shellcheck disable=SC2046
+sudo chown -R $(whoami) /usr/local/bin /usr/local/lib
 
 JAR_URL="https://github.com/404femme/dxrkfetch/releases/latest/download/dxrkfetch.jar"
+INSTALL_DIR="/usr/local/lib/dxrkfetch"
+BIN_DIR="/usr/local/bin"
 LAUNCHER="$BIN_DIR/dxrkfetch"
 
 # Check if JDK is installed via javac
