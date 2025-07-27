@@ -1,9 +1,11 @@
-# 🕶 dxrkfetch
+# dxrkfetch 🕶
 
 > *System info. Terminal black. Aesthetic lethal.*
 > *No masc nonsense. Just stripped binaries and bleeding output.*
 
 ---
+
+![dxrkfetch macOS](/screenshot/macos.png)
 
 ## 🖤 what is dxrkfetch?
 
@@ -12,31 +14,25 @@ It displays system stats (OS, kernel, uptime, shell, etc.) in a clean, ASCII-pow
 
 ---
 
-## ⚙️ features
+## features ⚙️
 
 * 🐧 Built for **Linux** and **macOS**
 * 🩻 ASCII logos — glitchcore, distro-accurate
 * ⏳ Uptime, kernel, shell, packages, and user info
 * ☕ Bundled JRE — no runtime dependencies
 * 🚫 No color vomit. No bloat. No bullshit.
-* 🖤 Fast, quiet, and terminal-native
+* ☠️ Fast, quiet, and terminal-native
 
 ---
 
-## 📸 screenshots
-
-![dxrkfetch macOS](/screenshot/macos.png)
-
----
-
-## 🧪 installation
+## installation 🔧
 
 > ⚠️ *currently under dark construction...*
 > no install script yet. just shadow builds. patience is a virtue. 🕳️
 
 ---
 
-## 🚀 usage
+## usage 👁️
 
 ```bash
 dxrkfetch
@@ -47,10 +43,10 @@ Or run directly:
 ```bash
 java -jar dxrkfetch.jar
 ```
-
 ---
 
-## ☠️ contribute
+<div align="center">
 
-This project is open to the weirdos, the quiet rebels, and anyone who thinks `neofetch` should wear black and talk less.
+#### made with ᥫ᭡ by `x44annie`
 
+</div>
