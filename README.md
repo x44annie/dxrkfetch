@@ -32,7 +32,7 @@ It displays system stats (OS, kernel, uptime, shell, etc.) in a clean, ASCII-pow
 #### ・One-Liner Install (with curl)
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/404femme/dxrkfetch/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/404femme/dxrkfetch/main/install.sh | sudo bash
 ```
 
 #### ・Manual Setup (for control freaks)
