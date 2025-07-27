@@ -5,8 +5,7 @@ set -e
 sudo mkdir -p /usr/local/bin /usr/local/lib
 # shellcheck disable=SC2046
 sudo chown -R $(whoami) /usr/local/bin /usr/local/lib
-
-JAR_URL="https://github.com/404femme/dxrkfetch/releases/latest/download/dxrkfetch.jar"
+JAR_URL="https://github.com/404femme/dxrkfetch/releases/download/first/dxrkfetch.jar"
 INSTALL_DIR="/usr/local/lib/dxrkfetch"
 BIN_DIR="/usr/local/bin"
 LAUNCHER="$BIN_DIR/dxrkfetch"
