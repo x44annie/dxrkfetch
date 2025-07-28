@@ -28,7 +28,7 @@ public class Fetch {
                         "elif command -v brew >/dev/null; then " +
                         "  FORM=$(brew list --formula 2>/dev/null | wc -l); " +
                         "  CASK=$(brew list --cask 2>/dev/null | wc -l); " +
-                        "  expr $FORM + $CASK; " +  // <- безопасный способ просуммировать
+                        "  expr $FORM + $CASK; " +
                         "elif [ -d /var/log/packages ]; then ls /var/log/packages | wc -l; " +
                         "else echo 0; fi\""
         ).trim();
