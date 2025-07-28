@@ -18,9 +18,9 @@ public class Fetch {
         String shell = System.getenv("SHELL").replace("bin", "").replace("/", "");
         String uptime = SystemNameProvider.getUptime();
         String pkgs = SystemNameProvider.runCommand(
-                "bash -c '" +
+                "sh -c \"" +
                         "if command -v nix-store >/dev/null; then nix-store --query --requisites /run/current-system | wc -l; " +
-                        "elif command -v dpkg >/dev/null; then dpkg --list | grep \"^ii\" | wc -l; " +
+                        "elif command -v dpkg >/dev/null; then dpkg --list | grep '^ii' | wc -l; " +
                         "elif command -v pacman >/dev/null; then pacman -Q | wc -l; " +
                         "elif command -v dnf >/dev/null; then dnf list installed | wc -l; " +
                         "elif command -v apk >/dev/null; then apk info | wc -l; " +
@@ -28,10 +28,11 @@ public class Fetch {
                         "elif command -v brew >/dev/null; then " +
                         "  FORM=$(brew list --formula 2>/dev/null | wc -l); " +
                         "  CASK=$(brew list --cask 2>/dev/null | wc -l); " +
-                        "  echo $((FORM + CASK)); " +
+                        "  expr $FORM + $CASK; " +  // <- безопасный способ просуммировать
                         "elif [ -d /var/log/packages ]; then ls /var/log/packages | wc -l; " +
-                        "else echo 0; fi'"
+                        "else echo 0; fi\""
         ).trim();
+
 
         if (hostname == null || hostname.isEmpty()) hostname = SystemNameProvider.runCommand("hostname");
 
