@@ -43,11 +43,10 @@ chmod +x install.sh
 dxrkfetch
 ```
 
-#### ・Dependencies
+#### ・Dependencies set
 
-* 🧱 JDK 24+
-* 🧨 Unix-like OS (Linux, macOS)
-* 🛠 `bash`, `javac`, `jar`, `sudo`
+* 🧱 OpebJDK 24+
+
 
 ---
 
