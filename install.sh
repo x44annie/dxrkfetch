@@ -21,7 +21,9 @@ if ! command -v javac >/dev/null 2>&1; then
       if command -v brew >/dev/null 2>&1; then
         brew install openjdk@24
         sudo ln -sfn /opt/homebrew/opt/openjdk@24/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-24.jdk
-
+      elif command v nix-env >/dev/null 2>&1; then
+        echo "[i] Detected Nix package manager"
+        nix-env -iA nixpkgs.jdk24
       else
         echo "[x] Homebrew not found. Please install JDK manually from https://adoptium.net/"
         exit 1
