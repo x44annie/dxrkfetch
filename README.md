@@ -45,7 +45,10 @@ dxrkfetch
 
 #### ・Dependencies set
 
- #####🧱 OpenJDK 24+
+<pre>
+🧱 OpenJDK 24+
+</pre>
+
 ---
 
 ## contribute ☠️
