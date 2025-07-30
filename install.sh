@@ -37,8 +37,13 @@ if ! command -v javac >/dev/null 2>&1; then
         nix-env -iA nixpkgs.jdk24
 
       elif command -v apt >/dev/null 2>&1; then
-        sudo apt update
-        sudo apt install -y openjdk-24-jdk
+        echo "[i] Detected APT (Debian/Ubuntu). Installing via Snap..."
+        if ! command -v snap >/dev/null 2>&1; then
+          echo "[!] Snap not found. Installing..."
+          sudo apt update
+          sudo apt install -y snapd
+        fi
+        sudo snap install openjdk --channel=24/jdk --classic
 
       elif command -v dnf >/dev/null 2>&1; then
         sudo dnf install jdk-24-headless
