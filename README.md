@@ -1,4 +1,11 @@
-# dxrkfetch 🕶
+```
+    ____            __   ____     __       __  
+   / __ \_  _______/ /__/ __/__  / /______/ /_ 
+  / / / / |/_/ ___/ //_/ /_/ _ \/ __/ ___/ __ \
+ / /_/ />  </ /  / ,< / __/  __/ /_/ /__/ / / /
+/_____/_/|_/_/  /_/|_/_/  \___/\__/\___/_/ /_/ 
+                                               
+```
 
 > *System info. Terminal black. Aesthetic lethal.*
 > *No masc nonsense. Just stripped binaries and bleeding output.*
