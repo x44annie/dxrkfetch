@@ -7,15 +7,16 @@
                                                
 ```
 
-> *System info. Terminal black.*
-> *Just stripped binaries and bleeding output.*
 
 
 ![dxrkfetch macOS](/screenshot/macos.png)
 
----
+> *System info. Terminal black.*
+> *Just stripped binaries and bleeding output.*
+<br>
 
-## features ⚙️
+
+## Features
 
 * 🐧 Built for **Linux** and **macOS**
 * 🩻 ASCII logos — glitchcore, distro-accurate
@@ -23,9 +24,9 @@
 * ☕ Bundled JRE — no runtime dependencies
 * 🚫 No color vomit. No bloat.
 * ☠️ Fast, quiet, and terminal-native
+<br>
 
-
-## installation 🕳️
+## Installation
 
 #### ・One-Liner Install (with curl)
 
@@ -46,13 +47,6 @@ dxrkfetch
 <pre>
 🧱 OpenJDK 24+
 </pre>
-
----
-
-## contribute ☠️
-This project is open to the weirdos, the quiet rebels, and anyone who thinks `neofetch` should wear black and talk less.
-
----
 
 <div align="center">
 
