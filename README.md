@@ -24,16 +24,17 @@
 🚫 No color vomit. No bloat.<br>
 ☠️ Fast, quiet, and terminal-native
 <br>
+<br>
 
 ## Installation
 
-#### ・One-Liner Install (with curl)
+#### One-Liner Install 
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/404femme/dxrkfetch/main/install.sh | sudo bash
 ```
 
-#### ・Manual Setup (for control freaks)
+#### Manual Setup
 
 ```bash
 chmod +x install.sh
@@ -41,7 +42,7 @@ chmod +x install.sh
 dxrkfetch
 ```
 
-#### ・Dependencies set
+#### Dependencies set
 
 <pre>
 OpenJDK 24+
