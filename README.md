@@ -18,12 +18,12 @@
 
 ## Features
 
-* 🐧 Built for **Linux** and **macOS**
-* 🩻 ASCII logos — glitchcore, distro-accurate
-* ⏳ Uptime, kernel, shell, packages, and user info
-* ☕ Bundled JRE — no runtime dependencies
-* 🚫 No color vomit. No bloat.
-* ☠️ Fast, quiet, and terminal-native
+🐧 Built for **Linux** and **macOS**<br>
+🩻 ASCII logos — glitchcore, distro-accurate<br>
+⏳ Uptime, kernel, shell, packages, and user info<br>
+☕ Bundled JRE — no runtime dependencies<br>
+🚫 No color vomit. No bloat.<br>
+☠️ Fast, quiet, and terminal-native
 <br>
 
 ## Installation
